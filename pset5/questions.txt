@@ -1,0 +1,20 @@
+0.  An artificial long word said to mean a lung disease caused by inhaling very fine ash and sand dust
+1.  Returns resource usage measures
+2.  16 members
+3.  This is the way man page tells to use getrusage()
+4.  4.1. It gets the next character (an unsigned char) from the specified stream and advances the position indicator for the stream,
+         until EOF reached
+    4.2. If it is alphabetical character or apostroph it appends character to the word
+    4.3. Ignores words which are too long or have numbers within them
+    4.4. When EOF is reached it adds '/n' then updates counter then runs check subroutine calculates time spent on checking and
+         prints out the words if it is misspelled
+5.  For checking if character is alphabetical
+6.  Values these parameters (pointers) pointing to are just for read only
+7.  I have implemented a hashtable. I declared an array of 1000 nodes as a global variable then used a hash function to distribute 
+    nodes along these nodes. Every node in an array points to the linked list of nodes distributed there according to the hash
+    function. Every node contains a word from dictionary and a pointer to the next node in the linked list or to the NULL if node
+    is the last one in linked list
+8.  0.14 to check Austin Powers
+9.  No chanches have been made, initial performance was sufficient
+10. Yes, I need to eleminate step in load function where I load word into memory and then copy it to the newly allocated node. It
+    should load into the node of linked list directly 
